@@ -171,7 +171,7 @@ class Search: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
                             self.helperLabel.transitionText(withString: self.noVenues)
                             return
                         } else {
-                            self.venues = venuesReturned
+                            self.venues = venuesReturned.sorted(by: {$0.Checkins > $1.Checkins})
                             self.showNewVenues()
                         }
                     }

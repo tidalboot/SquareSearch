@@ -84,10 +84,6 @@ class Venue {
                 )
             }
             
-            if (!venues.isEmpty) {
-                venues = venues.sorted(by: {$0.Checkins > $1.Checkins})
-            }
-            
             return venues
         } catch {
             return venues
