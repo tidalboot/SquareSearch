@@ -1,14 +1,13 @@
 
-//  Created by Nick Jones on 04/09/2017.
+//  Venue
 //  Copyright © 2017 NickJones. All rights reserved.
 
 import Foundation
 
-//We'll go for a class over a struct as any TelescopRecord objects will be initialised here and should never need to be copied anywhere for modification
 class Venue {
     
     // MARK: - Global Properties 🌎
-    //All properties should be read only, leaving the initialiser to do all of the work, the app is an image gallery and so by definition is read-only itself.
+    //All properties should be read only, leaving the initialiser to do all of the work, the app is a list of venues and so is read-only by nature
     let Name: String
     let Checkins: Int
     let CategoryName: String

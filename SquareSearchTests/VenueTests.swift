@@ -1,10 +1,6 @@
-//
-//  SquareSearchTests.swift
+
 //  SquareSearchTests
-//
-//  Created by Nick Jones on 15/09/2017.
 //  Copyright © 2017 NickJones. All rights reserved.
-//
 
 import XCTest
 @testable import SquareSearch
