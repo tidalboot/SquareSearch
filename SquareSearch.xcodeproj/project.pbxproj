@@ -13,6 +13,8 @@
 		FC3CB1D61F6BE36100B5AFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3CB1D51F6BE36100B5AFE9 /* Assets.xcassets */; };
 		FC3CB1D91F6BE36100B5AFE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3CB1D71F6BE36100B5AFE9 /* LaunchScreen.storyboard */; };
 		FC3CB1E41F6BE36100B5AFE9 /* SquareSearchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CB1E31F6BE36100B5AFE9 /* SquareSearchTests.swift */; };
+		FC3CB1F01F6BE4ED00B5AFE9 /* ColchesterVenues in Resources */ = {isa = PBXBuildFile; fileRef = FC3CB1EF1F6BE4ED00B5AFE9 /* ColchesterVenues */; };
+		FC3CB1F21F6BE73E00B5AFE9 /* ColchesterPrezzoPhotos in Resources */ = {isa = PBXBuildFile; fileRef = FC3CB1F11F6BE73E00B5AFE9 /* ColchesterPrezzoPhotos */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +38,8 @@
 		FC3CB1DF1F6BE36100B5AFE9 /* SquareSearchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = SquareSearchTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3CB1E31F6BE36100B5AFE9 /* SquareSearchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SquareSearchTests.swift; sourceTree = "<group>"; };
 		FC3CB1E51F6BE36100B5AFE9 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		FC3CB1EF1F6BE4ED00B5AFE9 /* ColchesterVenues */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColchesterVenues; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
+		FC3CB1F11F6BE73E00B5AFE9 /* ColchesterPrezzoPhotos */ = {isa = PBXFileReference; lastKnownFileType = text; path = ColchesterPrezzoPhotos; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.javascript; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -77,6 +81,7 @@
 		FC3CB1CD1F6BE36100B5AFE9 /* SquareSearch */ = {
 			isa = PBXGroup;
 			children = (
+				FC3CB1EE1F6BE4CD00B5AFE9 /* MockedData */,
 				FC3CB1CE1F6BE36100B5AFE9 /* AppDelegate.swift */,
 				FC3CB1D01F6BE36100B5AFE9 /* ViewController.swift */,
 				FC3CB1D21F6BE36100B5AFE9 /* Main.storyboard */,
@@ -94,6 +99,15 @@
 				FC3CB1E51F6BE36100B5AFE9 /* Info.plist */,
 			);
 			path = SquareSearchTests;
+			sourceTree = "<group>";
+		};
+		FC3CB1EE1F6BE4CD00B5AFE9 /* MockedData */ = {
+			isa = PBXGroup;
+			children = (
+				FC3CB1EF1F6BE4ED00B5AFE9 /* ColchesterVenues */,
+				FC3CB1F11F6BE73E00B5AFE9 /* ColchesterPrezzoPhotos */,
+			);
+			path = MockedData;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -179,6 +193,8 @@
 			files = (
 				FC3CB1D91F6BE36100B5AFE9 /* LaunchScreen.storyboard in Resources */,
 				FC3CB1D61F6BE36100B5AFE9 /* Assets.xcassets in Resources */,
+				FC3CB1F21F6BE73E00B5AFE9 /* ColchesterPrezzoPhotos in Resources */,
+				FC3CB1F01F6BE4ED00B5AFE9 /* ColchesterVenues in Resources */,
 				FC3CB1D41F6BE36100B5AFE9 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

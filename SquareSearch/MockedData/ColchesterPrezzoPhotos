@@ -1,0 +1,43 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "59bbafa8dd57975b9a6052d9"
+    },
+    "response": {
+        "photos": {
+            "count": 1,
+            "items": [
+                      {
+                      "id": "51854b71498ea34fbbd404e4",
+                      "createdAt": 1367690097,
+                      "source": {
+                      "name": "Foursquare for Android",
+                      "url": "https://foursquare.com/download/#/android"
+                      },
+                      "prefix": "https://igx.4sqi.net/img/general/",
+                      "suffix": "/48882870_rDAmyLTluuMOCHviQ5C_3w_9ItfEsoEzoSthJmjlxRU.jpg",
+                      "width": 960,
+                      "height": 720,
+                      "user": {
+                      "id": "48882870",
+                      "firstName": "Matt",
+                      "lastName": "Beatson",
+                      "gender": "male",
+                      "photo": {
+                      "prefix": "https://igx.4sqi.net/img/user/",
+                      "suffix": "/JOS00OUEWJE5YCYT.jpg"
+                      }
+                      },
+                      "checkin": {
+                      "id": "51854b6e498ef8b3e0526bb9",
+                      "createdAt": 1367690094,
+                      "type": "checkin",
+                      "timeZoneOffset": 60
+                      },
+                      "visibility": "public"
+                      }
+                      ],
+            "dupesRemoved": 0
+        }
+    }
+}

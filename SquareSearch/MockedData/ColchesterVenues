@@ -1,0 +1,391 @@
+{
+    "meta": {
+        "code": 200,
+        "requestId": "59bbaf19db04f549b267815d"
+    },
+    "response": {
+        "venues": [
+                   {
+                   "id": "4c0a3a0e6071a593e629df32",
+                   "name": "Prezzo",
+                   "contact": {
+                   "phone": "+441206573388",
+                   "formattedPhone": "+44 1206 573388",
+                   "twitter": "love_prezzo",
+                   "facebook": "178881664125",
+                   "facebookUsername": "loveprezzo",
+                   "facebookName": "Prezzo"
+                   },
+                   "location": {
+                   "address": "1 Culver Street East",
+                   "lat": 51.889251734262544,
+                   "lng": 0.9041843433439954,
+                   "labeledLatLngs": [
+                                      {
+                                      "label": "display",
+                                      "lat": 51.889251734262544,
+                                      "lng": 0.9041843433439954
+                                      }
+                                      ],
+                   "postalCode": "CO1 1LD",
+                   "cc": "GB",
+                   "city": "Colchester",
+                   "state": "Essex",
+                   "country": "United Kingdom",
+                   "formattedAddress": [
+                                        "1 Culver Street East",
+                                        "Colchester",
+                                        "Essex",
+                                        "CO1 1LD",
+                                        "United Kingdom"
+                                        ]
+                   },
+                   "categories": [
+                                  {
+                                  "id": "4bf58dd8d48988d110941735",
+                                  "name": "Italian Restaurant",
+                                  "pluralName": "Italian Restaurants",
+                                  "shortName": "Italian",
+                                  "icon": {
+                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/italian_",
+                                  "suffix": ".png"
+                                  },
+                                  "primary": true
+                                  }
+                                  ],
+                   "verified": false,
+                   "stats": {
+                   "checkinsCount": 186,
+                   "usersCount": 119,
+                   "tipCount": 7
+                   },
+                   "url": "http://www.prezzorestaurants.co.uk",
+                   "allowMenuUrlEdit": true,
+                   "beenHere": {
+                   "lastCheckinExpiredAt": 0
+                   },
+                   "specials": {
+                   "count": 0,
+                   "items": []
+                   },
+                   "hereNow": {
+                   "count": 0,
+                   "summary": "Nobody here",
+                   "groups": []
+                   },
+                   "referralId": "v-1505472281",
+                   "venueChains": [
+                                   {
+                                   "id": "5569f7e2a7c8896abe7cecd6"
+                                   }
+                                   ],
+                   "hasPerk": false
+                   },
+                   {
+                   "id": "4bf7961babdaef3bf884a184",
+                   "name": "15 Queen Street",
+                   "contact": {
+                   "phone": "+441206562888",
+                   "formattedPhone": "+44 1206 562888",
+                   "twitter": "15queenstreet",
+                   "facebook": "157893140941254",
+                   "facebookUsername": "15QueenStreet",
+                   "facebookName": "15 Queen Street"
+                   },
+                   "location": {
+                   "address": "St Botolph's",
+                   "crossStreet": "Queen Street",
+                   "lat": 51.8892482514323,
+                   "lng": 0.9045505522021131,
+                   "labeledLatLngs": [
+                                      {
+                                      "label": "display",
+                                      "lat": 51.8892482514323,
+                                      "lng": 0.9045505522021131
+                                      }
+                                      ],
+                   "postalCode": "CO1 2PH",
+                   "cc": "GB",
+                   "city": "Colchester",
+                   "state": "Essex",
+                   "country": "United Kingdom",
+                   "formattedAddress": [
+                                        "St Botolph's (Queen Street)",
+                                        "Colchester",
+                                        "Essex",
+                                        "CO1 2PH",
+                                        "United Kingdom"
+                                        ]
+                   },
+                   "categories": [
+                                  {
+                                  "id": "4bf58dd8d48988d171941735",
+                                  "name": "Event Space",
+                                  "pluralName": "Event Spaces",
+                                  "shortName": "Event Space",
+                                  "icon": {
+                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/building/eventspace_",
+                                  "suffix": ".png"
+                                  },
+                                  "primary": true
+                                  }
+                                  ],
+                   "verified": true,
+                   "stats": {
+                   "checkinsCount": 866,
+                   "usersCount": 58,
+                   "tipCount": 4
+                   },
+                   "url": "http://www.15queenstreet.org",
+                   "venueRatingBlacklisted": true,
+                   "beenHere": {
+                   "lastCheckinExpiredAt": 0
+                   },
+                   "specials": {
+                   "count": 0,
+                   "items": []
+                   },
+                   "venuePage": {
+                   "id": "54102894"
+                   },
+                   "storeId": "",
+                   "hereNow": {
+                   "count": 0,
+                   "summary": "Nobody here",
+                   "groups": []
+                   },
+                   "referralId": "v-1505472281",
+                   "venueChains": [],
+                   "hasPerk": false
+                   },
+                   {
+                   "id": "5776b8b5cd10bd04752130b5",
+                   "name": "Miseria & Nobiltà",
+                   "contact": {},
+                   "location": {
+                   "lat": 51.889206,
+                   "lng": 0.90449,
+                   "labeledLatLngs": [
+                                      {
+                                      "label": "display",
+                                      "lat": 51.889206,
+                                      "lng": 0.90449
+                                      }
+                                      ],
+                   "postalCode": "CO1",
+                   "cc": "GB",
+                   "city": "Colchester",
+                   "state": "Essex",
+                   "country": "United Kingdom",
+                   "formattedAddress": [
+                                        "Colchester",
+                                        "Essex",
+                                        "CO1",
+                                        "United Kingdom"
+                                        ]
+                   },
+                   "categories": [
+                                  {
+                                  "id": "4bf58dd8d48988d110941735",
+                                  "name": "Italian Restaurant",
+                                  "pluralName": "Italian Restaurants",
+                                  "shortName": "Italian",
+                                  "icon": {
+                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/food/italian_",
+                                  "suffix": ".png"
+                                  },
+                                  "primary": true
+                                  }
+                                  ],
+                   "verified": false,
+                   "stats": {
+                   "checkinsCount": 3,
+                   "usersCount": 3,
+                   "tipCount": 0
+                   },
+                   "allowMenuUrlEdit": true,
+                   "beenHere": {
+                   "lastCheckinExpiredAt": 0
+                   },
+                   "specials": {
+                   "count": 0,
+                   "items": []
+                   },
+                   "hereNow": {
+                   "count": 0,
+                   "summary": "Nobody here",
+                   "groups": []
+                   },
+                   "referralId": "v-1505472281",
+                   "venueChains": [],
+                   "hasPerk": false
+                   },
+                   {
+                   "id": "4feae76f64a4fa28dce52b90",
+                   "name": "The Gym",
+                   "contact": {
+                   "phone": "+448443843272",
+                   "formattedPhone": "+44 844 384 3272",
+                   "twitter": "thegymgroup"
+                   },
+                   "location": {
+                   "address": "20-28 Queen Street",
+                   "lat": 51.888420039963535,
+                   "lng": 0.9031963348388672,
+                   "labeledLatLngs": [
+                                      {
+                                      "label": "display",
+                                      "lat": 51.888420039963535,
+                                      "lng": 0.9031963348388672
+                                      }
+                                      ],
+                   "postalCode": "CO1 2PJ",
+                   "cc": "GB",
+                   "city": "Colchester",
+                   "state": "Essex",
+                   "country": "United Kingdom",
+                   "formattedAddress": [
+                                        "20-28 Queen Street",
+                                        "Colchester",
+                                        "Essex",
+                                        "CO1 2PJ",
+                                        "United Kingdom"
+                                        ]
+                   },
+                   "categories": [
+                                  {
+                                  "id": "4bf58dd8d48988d176941735",
+                                  "name": "Gym",
+                                  "pluralName": "Gyms",
+                                  "shortName": "Gym",
+                                  "icon": {
+                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/building/gym_",
+                                  "suffix": ".png"
+                                  },
+                                  "primary": true
+                                  }
+                                  ],
+                   "verified": true,
+                   "stats": {
+                   "checkinsCount": 299,
+                   "usersCount": 55,
+                   "tipCount": 1
+                   },
+                   "url": "http://www.thegymgroup.com",
+                   "allowMenuUrlEdit": true,
+                   "beenHere": {
+                   "lastCheckinExpiredAt": 0
+                   },
+                   "specials": {
+                   "count": 0,
+                   "items": []
+                   },
+                   "hereNow": {
+                   "count": 0,
+                   "summary": "Nobody here",
+                   "groups": []
+                   },
+                   "referralId": "v-1505472281",
+                   "venueChains": [
+                                   {
+                                   "id": "5569f4e7a7c8896abe7c8a75"
+                                   }
+                                   ],
+                   "hasPerk": false
+                   },
+                   {
+                   "id": "4c5eb39385a1e21ebdd05c11",
+                   "name": "Natural History Museum",
+                   "contact": {},
+                   "location": {
+                   "lat": 51.88959507708299,
+                   "lng": 0.9040259909737542,
+                   "labeledLatLngs": [
+                                      {
+                                      "label": "display",
+                                      "lat": 51.88959507708299,
+                                      "lng": 0.9040259909737542
+                                      }
+                                      ],
+                   "cc": "GB",
+                   "city": "Colchester",
+                   "state": "Essex",
+                   "country": "United Kingdom",
+                   "formattedAddress": [
+                                        "Colchester",
+                                        "Essex",
+                                        "United Kingdom"
+                                        ]
+                   },
+                   "categories": [
+                                  {
+                                  "id": "4bf58dd8d48988d181941735",
+                                  "name": "Museum",
+                                  "pluralName": "Museums",
+                                  "shortName": "Museum",
+                                  "icon": {
+                                  "prefix": "https://ss3.4sqi.net/img/categories_v2/arts_entertainment/museum_",
+                                  "suffix": ".png"
+                                  },
+                                  "primary": true
+                                  }
+                                  ],
+                   "verified": false,
+                   "stats": {
+                   "checkinsCount": 66,
+                   "usersCount": 53,
+                   "tipCount": 2
+                   },
+                   "allowMenuUrlEdit": true,
+                   "beenHere": {
+                   "lastCheckinExpiredAt": 0
+                   },
+                   "specials": {
+                   "count": 0,
+                   "items": []
+                   },
+                   "hereNow": {
+                   "count": 0,
+                   "summary": "Nobody here",
+                   "groups": []
+                   },
+                   "referralId": "v-1505472281",
+                   "venueChains": [],
+                   "hasPerk": false
+                   }
+                   ],
+        "confident": false,
+        "geocode": {
+            "what": "",
+            "where": "colchester essex",
+            "feature": {
+                "cc": "GB",
+                "name": "Colchester",
+                "displayName": "Colchester, Essex, United Kingdom",
+                "matchedName": "Colchester, Essex, United Kingdom",
+                "highlightedName": "<b>Colchester</b>, <b>Essex</b>, United Kingdom",
+                "woeType": 7,
+                "slug": "colchester-united-kingdom",
+                "id": "geonameid:2652618",
+                "longId": "72057594040580554",
+                "geometry": {
+                    "center": {
+                        "lat": 51.88921,
+                        "lng": 0.90421
+                    },
+                    "bounds": {
+                        "ne": {
+                            "lat": 51.92296099999987,
+                            "lng": 0.9539204999998105
+                        },
+                        "sw": {
+                            "lat": 51.86010149999987,
+                            "lng": 0.8269249999998465
+                        }
+                    }
+                }
+            },
+            "parents": []
+        }
+    }
+}
