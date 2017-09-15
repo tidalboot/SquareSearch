@@ -12,7 +12,7 @@ I also limited it to the first ten results for now to keep it simple and easy to
 
 Once the venue data is retrieved the app then makes a call to:
 
-https://api.foursquare.com/v2/venues/ __*Location*__ [/photos?limit=1](https://www.Foursquare.com)
+https://api.foursquare.com/v2/venues/ __*Venue ID*__ [/photos?limit=1](https://www.Foursquare.com)
 
 To retrieve data for the first image available for a particular venue. Once retrieved the full URL is constructed using the the prefix, the image size and the suffix, for example the following image:
 ```json
