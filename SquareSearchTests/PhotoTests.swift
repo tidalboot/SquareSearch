@@ -27,8 +27,12 @@ class PhotoTests: XCTestCase {
     }
     
     func testCreatePhotoURLReturnsTheCorrectPath() {
-        let completePhotoPath: String = Photo.createPhotoURL(fromRawPhotoData: mockedPhotosData)
-        XCTAssert(completePhotoPath == "https://igx.4sqi.net/img/general/960x720//48882870_rDAmyLTluuMOCHviQ5C_3w_9ItfEsoEzoSthJmjlxRU.jpg", "Unable to parse the correct path from the mocked photo path data")
+        guard let completePhotoPath: URL = Photo.createPhotoURL(fromRawPhotoData: mockedPhotosData!) else {
+            XCTFail("Unable to parse a photo URL from the mocked data")
+            return
+        }
+        
+        XCTAssert(completePhotoPath.absoluteString == "https://igx.4sqi.net/img/general/960x720/48882870_rDAmyLTluuMOCHviQ5C_3w_9ItfEsoEzoSthJmjlxRU.jpg", "Unable to parse the correct path from the mocked photo path data")
     }
     
 }

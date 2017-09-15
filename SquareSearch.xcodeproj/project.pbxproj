@@ -19,6 +19,7 @@
 		FC3CB1FD1F6BF8B300B5AFE9 /* TransitionText.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CB1FC1F6BF8B300B5AFE9 /* TransitionText.swift */; };
 		FC754BCB1F6BFBEC00B32C40 /* Critic.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC754BCA1F6BFBEC00B32C40 /* Critic.swift */; };
 		FC754BCD1F6C062900B32C40 /* PhotoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC754BCC1F6C062900B32C40 /* PhotoTests.swift */; };
+		FC754BCF1F6C092A00B32C40 /* Photo.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC754BCE1F6C092A00B32C40 /* Photo.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -48,6 +49,7 @@
 		FC3CB1FC1F6BF8B300B5AFE9 /* TransitionText.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TransitionText.swift; sourceTree = "<group>"; };
 		FC754BCA1F6BFBEC00B32C40 /* Critic.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Critic.swift; sourceTree = "<group>"; };
 		FC754BCC1F6C062900B32C40 /* PhotoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoTests.swift; sourceTree = "<group>"; };
+		FC754BCE1F6C092A00B32C40 /* Photo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Photo.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -150,6 +152,7 @@
 			isa = PBXGroup;
 			children = (
 				FC3CB1F31F6BEE4D00B5AFE9 /* Venue.swift */,
+				FC754BCE1F6C092A00B32C40 /* Photo.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -270,6 +273,7 @@
 				FC754BCB1F6BFBEC00B32C40 /* Critic.swift in Sources */,
 				FC3CB1CF1F6BE36100B5AFE9 /* AppDelegate.swift in Sources */,
 				FC3CB1FA1F6BF5A700B5AFE9 /* SearchItem.swift in Sources */,
+				FC754BCF1F6C092A00B32C40 /* Photo.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
