@@ -81,9 +81,10 @@
                                    ],
                    "hasPerk": false
                    },
+                   
                    {
-                   "id": "4bf7961babdaef3bf884a184",
-                   "name": "15 Queen Street",
+                   "id": null,
+                   "name": null,
                    "contact": {
                    "phone": "+441206562888",
                    "formattedPhone": "+44 1206 562888",
@@ -122,7 +123,7 @@
                                   "id": "4bf58dd8d48988d171941735",
                                   "name": "Event Space",
                                   "pluralName": "Event Spaces",
-                                  "shortName": "Event Space",
+                                  "shortName": null,
                                   "icon": {
                                   "prefix": "https://ss3.4sqi.net/img/categories_v2/building/eventspace_",
                                   "suffix": ".png"
@@ -132,7 +133,7 @@
                                   ],
                    "verified": true,
                    "stats": {
-                   "checkinsCount": 866,
+                   "checkinsCount": null,
                    "usersCount": 58,
                    "tipCount": 4
                    },
