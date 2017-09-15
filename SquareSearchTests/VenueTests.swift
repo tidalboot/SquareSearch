@@ -32,12 +32,12 @@ class VenueTests: XCTestCase {
     }
     
     func testParseVenuesFromRawDataReturnsTheCorrectNumberOfVenues() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         XCTAssert(venues.count == 5, "Unable to parse the correct number of venues from the mocked data")
     }
     
     func testNameIsReturnedInTheCorrectFormat() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.isEmpty) {
             XCTFail("No venues were found")
@@ -53,7 +53,7 @@ class VenueTests: XCTestCase {
     }
     
     func testDefaultNameValueIsCorrectWhenNameIsUnavailable() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.count < 2) {
             XCTFail("Incorrect number of venues are being parsed from the mocked data")
@@ -69,7 +69,7 @@ class VenueTests: XCTestCase {
     }
     
     func testCheckinsIsReturnedInTheCorrectFormat() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.isEmpty) {
             XCTFail("No venues were found")
@@ -79,13 +79,13 @@ class VenueTests: XCTestCase {
         //We're safe to force unwrap the first object here because we've already checked that the array is not empty
         XCTAssertEqual(
             venues.first!.Checkins,
-            "186",
+            186,
             "Venue checkins is not being parsed to the correct format"
         )
     }
     
     func testDefaultCheckinsValueIsCorrectWhenCheckinsIsUnavailable() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.count < 2) {
             XCTFail("Incorrect number of venues are being parsed from the mocked data")
@@ -95,13 +95,13 @@ class VenueTests: XCTestCase {
         //Again we're safe to force unwrap the first object here because we've already checked that the array contains two objects
         XCTAssertEqual(
             venues[1].Checkins,
-            "0",
+            0,
             "Venue checkins is not being set to the correct default value when checkins is not available"
         )
     }
     
     func testCategoryNameIsInTheCorrectFormatWhenAvailable() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.isEmpty) {
             XCTFail("No venues were found")
@@ -117,7 +117,7 @@ class VenueTests: XCTestCase {
     }
     
     func testDefaultCategoryNameValueIsCorrectWhenCategoryNameIsUnavailable() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.isEmpty) {
             XCTFail("No venues were found")
@@ -138,7 +138,7 @@ class VenueTests: XCTestCase {
     }
     
     func testIDIsRetrievedWhenAvailable() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.isEmpty) {
             XCTFail("No venues were found")
@@ -155,7 +155,7 @@ class VenueTests: XCTestCase {
     
     
     func testDefaultIDIsEmptyWhenIDIsUnavailable() {
-        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        let venues = Venue.parseVenues(fromRawData: mockedVenuesData)
         
         if (venues.isEmpty) {
             XCTFail("No venues were found")
