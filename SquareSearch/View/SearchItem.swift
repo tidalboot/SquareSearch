@@ -10,6 +10,7 @@ class SearchItem: UICollectionViewCell {
     private var _categoryLabel: UILabel!
     private var _nameLabel: UILabel!
     private var _checkinsLabel: UILabel!
+    private var _imageView: UIImageView!
     
     // MARK: - Global Properties 🌎
     var categoryLabel: UILabel {
@@ -36,6 +37,26 @@ class SearchItem: UICollectionViewCell {
             contentView.addSubview(_checkinsLabel)
         }
     }
+    var imageView: UIImageView {
+        get {
+            return _imageView
+        } set {
+            _imageView = _imageView ?? newValue
+            _imageView.contentMode = .scaleAspectFill
+            _imageView.clipsToBounds = true
+            
+            //Here we add a gradient overlay effect to the image so that the title will always be readable, irrelevant of the image colour
+            let backgroundGradient = CAGradientLayer()
+            backgroundGradient.frame = _imageView.frame
+            backgroundGradient.locations = [0.0, 0.75]
+            let fadedLightGray = UIColor.init(colorLiteralRed: 177.0 / 255.0, green: 177.0 / 255.0, blue: 177.0 / 255.0, alpha: 0.05)
+            let fadedBlack = UIColor.init(colorLiteralRed: 0.0 / 255.0, green: 0.0 / 255.0, blue: 0.0 / 255.0, alpha: 0.75)
+            backgroundGradient.colors = [fadedLightGray.cgColor, fadedBlack.cgColor]
+            _imageView.layer.insertSublayer(backgroundGradient, at: 1)
+            
+            contentView.addSubview(_imageView)
+        }
+    }
     
     // MARK: - UICollectionViewCell Methods 👑
     override func prepareForReuse() {
@@ -43,9 +64,11 @@ class SearchItem: UICollectionViewCell {
         _categoryLabel?.removeFromSuperview()
         _nameLabel.removeFromSuperview()
         _checkinsLabel.removeFromSuperview()
+        _imageView?.removeFromSuperview()
         _categoryLabel = nil
         _nameLabel = nil
         _checkinsLabel = nil
+        _imageView = nil
     }
 }
 

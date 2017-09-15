@@ -73,6 +73,18 @@ class Search: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         searchItem.categoryLabel.numberOfLines = 1
         //-----
         
+        searchItem.imageView = UIImageView(frame: CGRect(
+            x: 0,
+            y: 0,
+            width: searchItem.frame.size.width,
+            height: searchItem.frame.size.height
+            )
+        )
+        Critic().getPhotoData(forVenueID: venueToUse.ID) { (dataReturned) in
+            
+        }
+        
+        
         return searchItem
     }
     
