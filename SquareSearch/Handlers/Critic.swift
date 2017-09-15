@@ -40,10 +40,14 @@ class Critic {
     //For safety we'll always pass a typed array of Venues through to our completion block; The Venue parser also returns a typed array of venues no matter what to fit this
     func findVenues(byLocation location: String, withCompletionHandler completionAction: @escaping ([Venue]) -> Void) {
         
-        //First we set up the endpoint that we want to hit
-        let endpointToUse = authenticatedEndpoint(withQuery: "/venues/search?near=\(location)&limit=5")
-        
         var venues = [Venue]()
+        
+        //First we set up the endpoint that we want to hit
+        guard let validLocation = location.addingPercentEncoding(withAllowedCharacters: CharacterSet.urlQueryAllowed) else {
+            completionAction(venues)
+            return
+        }
+        let endpointToUse = authenticatedEndpoint(withQuery: "venues/search?near=\(validLocation)&limit=10")
         
         //Then we ensure that our endpoint is still a valid URL
         guard let endpointURL = URL(string: endpointToUse) else {

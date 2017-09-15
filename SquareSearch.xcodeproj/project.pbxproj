@@ -7,6 +7,8 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		51645DBF4F69AA96CE7DD9F6 /* Pods_SquareSearch.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E1ED252B0FB57DBDCC93E132 /* Pods_SquareSearch.framework */; };
+		FB56BE9B14E46988D260673D /* Pods_SquareSearchTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = A93F0B5AB0F7D289F09CD93A /* Pods_SquareSearchTests.framework */; };
 		FC3CB1CF1F6BE36100B5AFE9 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC3CB1CE1F6BE36100B5AFE9 /* AppDelegate.swift */; };
 		FC3CB1D61F6BE36100B5AFE9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FC3CB1D51F6BE36100B5AFE9 /* Assets.xcassets */; };
 		FC3CB1D91F6BE36100B5AFE9 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FC3CB1D71F6BE36100B5AFE9 /* LaunchScreen.storyboard */; };
@@ -33,6 +35,12 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		6CEFCC12286B95B2A7D926B7 /* Pods-SquareSearch.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSearch.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSearch/Pods-SquareSearch.release.xcconfig"; sourceTree = "<group>"; };
+		714E3C5B6BB46ADFE9C6554E /* Pods-SquareSearchTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSearchTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSearchTests/Pods-SquareSearchTests.debug.xcconfig"; sourceTree = "<group>"; };
+		736B4B5B34528D45420CAC94 /* Pods-SquareSearch.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSearch.debug.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSearch/Pods-SquareSearch.debug.xcconfig"; sourceTree = "<group>"; };
+		A77F448AF11A986CC2246CDF /* Pods-SquareSearchTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-SquareSearchTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-SquareSearchTests/Pods-SquareSearchTests.release.xcconfig"; sourceTree = "<group>"; };
+		A93F0B5AB0F7D289F09CD93A /* Pods_SquareSearchTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareSearchTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		E1ED252B0FB57DBDCC93E132 /* Pods_SquareSearch.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_SquareSearch.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3CB1CB1F6BE36100B5AFE9 /* SquareSearch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = SquareSearch.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FC3CB1CE1F6BE36100B5AFE9 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FC3CB1D51F6BE36100B5AFE9 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
@@ -57,6 +65,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				51645DBF4F69AA96CE7DD9F6 /* Pods_SquareSearch.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,18 +73,41 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				FB56BE9B14E46988D260673D /* Pods_SquareSearchTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		4FF9F4D991BAD620C7B55CEA /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				736B4B5B34528D45420CAC94 /* Pods-SquareSearch.debug.xcconfig */,
+				6CEFCC12286B95B2A7D926B7 /* Pods-SquareSearch.release.xcconfig */,
+				714E3C5B6BB46ADFE9C6554E /* Pods-SquareSearchTests.debug.xcconfig */,
+				A77F448AF11A986CC2246CDF /* Pods-SquareSearchTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		9E91CA8297DA6E8CBC96E61E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				E1ED252B0FB57DBDCC93E132 /* Pods_SquareSearch.framework */,
+				A93F0B5AB0F7D289F09CD93A /* Pods_SquareSearchTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 		FC3CB1C21F6BE36100B5AFE9 = {
 			isa = PBXGroup;
 			children = (
 				FC3CB1CD1F6BE36100B5AFE9 /* SquareSearch */,
 				FC3CB1E21F6BE36100B5AFE9 /* SquareSearchTests */,
 				FC3CB1CC1F6BE36100B5AFE9 /* Products */,
+				4FF9F4D991BAD620C7B55CEA /* Pods */,
+				9E91CA8297DA6E8CBC96E61E /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -172,9 +204,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC3CB1E81F6BE36100B5AFE9 /* Build configuration list for PBXNativeTarget "SquareSearch" */;
 			buildPhases = (
+				A3F4CC61685CB5228936F828 /* [CP] Check Pods Manifest.lock */,
 				FC3CB1C71F6BE36100B5AFE9 /* Sources */,
 				FC3CB1C81F6BE36100B5AFE9 /* Frameworks */,
 				FC3CB1C91F6BE36100B5AFE9 /* Resources */,
+				ABAE02DD1A763ACD835F505F /* [CP] Embed Pods Frameworks */,
+				D49D35C906C48B0EDBFF746D /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -189,9 +224,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = FC3CB1EB1F6BE36100B5AFE9 /* Build configuration list for PBXNativeTarget "SquareSearchTests" */;
 			buildPhases = (
+				202ECEE9A667FDAA02D6DF53 /* [CP] Check Pods Manifest.lock */,
 				FC3CB1DB1F6BE36100B5AFE9 /* Sources */,
 				FC3CB1DC1F6BE36100B5AFE9 /* Frameworks */,
 				FC3CB1DD1F6BE36100B5AFE9 /* Resources */,
+				F120EDD194E5C0A854C2D306 /* [CP] Embed Pods Frameworks */,
+				09F069F8CC2E80D2EDD9FFF7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -261,6 +299,99 @@
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		09F069F8CC2E80D2EDD9FFF7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareSearchTests/Pods-SquareSearchTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		202ECEE9A667FDAA02D6DF53 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		A3F4CC61685CB5228936F828 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+		ABAE02DD1A763ACD835F505F /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareSearch/Pods-SquareSearch-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D49D35C906C48B0EDBFF746D /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareSearch/Pods-SquareSearch-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		F120EDD194E5C0A854C2D306 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-SquareSearchTests/Pods-SquareSearchTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		FC3CB1C71F6BE36100B5AFE9 /* Sources */ = {
@@ -413,6 +544,7 @@
 		};
 		FC3CB1E91F6BE36100B5AFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 736B4B5B34528D45420CAC94 /* Pods-SquareSearch.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SquareSearch/Info.plist;
@@ -426,6 +558,7 @@
 		};
 		FC3CB1EA1F6BE36100B5AFE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 6CEFCC12286B95B2A7D926B7 /* Pods-SquareSearch.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				INFOPLIST_FILE = SquareSearch/Info.plist;
@@ -439,6 +572,7 @@
 		};
 		FC3CB1EC1F6BE36100B5AFE9 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 714E3C5B6BB46ADFE9C6554E /* Pods-SquareSearchTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -454,6 +588,7 @@
 		};
 		FC3CB1ED1F6BE36100B5AFE9 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A77F448AF11A986CC2246CDF /* Pods-SquareSearchTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";

@@ -7,34 +7,16 @@ import UIKit
 
 class SearchItem: UICollectionViewCell {
     // MARK: - Local Properties 💻
-    private var _categoryLabel: UILabel!
-    private var _nameLabel: UILabel!
-    private var _checkinsLabel: UILabel!
+    private var _detailsLabel: UILabel!
     private var _imageView: UIImageView!
     
     // MARK: - Global Properties 🌎
-    var categoryLabel: UILabel {
+    var detailsLabel: UILabel {
         get {
-            return _categoryLabel
+            return _detailsLabel
         } set {
-            _categoryLabel = _categoryLabel ?? newValue
-            contentView.addSubview(_categoryLabel)
-        }
-    }
-    var nameLabel: UILabel {
-        get {
-            return _nameLabel
-        } set {
-            _nameLabel = _nameLabel ?? newValue
-            contentView.addSubview(_nameLabel)
-        }
-    }
-    var checkinsLabel: UILabel {
-        get {
-            return _checkinsLabel
-        } set {
-            _checkinsLabel = _checkinsLabel ?? newValue
-            contentView.addSubview(_checkinsLabel)
+            _detailsLabel = _detailsLabel ?? newValue
+            contentView.addSubview(_detailsLabel)
         }
     }
     var imageView: UIImageView {
@@ -61,13 +43,10 @@ class SearchItem: UICollectionViewCell {
     // MARK: - UICollectionViewCell Methods 👑
     override func prepareForReuse() {
         super.prepareForReuse()
-        _categoryLabel?.removeFromSuperview()
-        _nameLabel.removeFromSuperview()
-        _checkinsLabel.removeFromSuperview()
+        _detailsLabel?.removeFromSuperview()
         _imageView?.removeFromSuperview()
-        _categoryLabel = nil
-        _nameLabel = nil
-        _checkinsLabel = nil
+        
+        _detailsLabel = nil
         _imageView = nil
     }
 }

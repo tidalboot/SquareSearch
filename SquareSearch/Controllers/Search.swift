@@ -4,6 +4,7 @@
 
 import Foundation
 import UIKit
+import SDWebImage
 
 //Going for Search rather than something like "SearchController" as I think the inheritance from UIViewController provides this information itself
 class Search: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, UISearchBarDelegate {
@@ -29,49 +30,6 @@ class Search: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
         let venueToUse = venues[indexPath.row]
         
         let searchItem = collectionView.dequeueReusableCell(withReuseIdentifier: "searchItem", for: indexPath) as! SearchItem
-        searchItem.backgroundColor = .darkGray
-        
-        //Venue Name Label
-        searchItem.nameLabel = UILabel(frame: CGRect(
-            x: 10,
-            y: searchItem.frame.size.height * 0.1,
-            width: searchItem.frame.size.width * 0.6,
-            height: searchItem.frame.size.height * 0.3
-            )
-        )
-        searchItem.nameLabel.text = venueToUse.Name
-        searchItem.nameLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light)
-        searchItem.nameLabel.textColor = .white
-        searchItem.nameLabel.numberOfLines = 1
-        //-----
-        
-        //Venue Checkins Label
-        searchItem.checkinsLabel = UILabel(frame: CGRect(
-            x: 10,
-            y: searchItem.frame.size.height * 0.7,
-            width: searchItem.frame.size.width,
-            height: searchItem.frame.size.height * 0.3
-            )
-        )
-        searchItem.checkinsLabel.text = "Checkins: \(venueToUse.Checkins)"
-        searchItem.checkinsLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light)
-        searchItem.checkinsLabel.textColor = .white
-        searchItem.checkinsLabel.numberOfLines = 1
-        //-----
-        
-        //Venue Category Label
-        searchItem.categoryLabel = UILabel(frame: CGRect(
-            x: searchItem.frame.size.width * 0.6 + 10,
-            y: searchItem.frame.size.height * 0.1,
-            width: searchItem.frame.size.width * 0.4 - 20,
-            height: searchItem.frame.size.height * 0.3
-            )
-        )
-        searchItem.categoryLabel.text = venueToUse.CategoryName
-        searchItem.categoryLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light)
-        searchItem.categoryLabel.textColor = .white
-        searchItem.categoryLabel.numberOfLines = 1
-        //-----
         
         searchItem.imageView = UIImageView(frame: CGRect(
             x: 0,
@@ -80,10 +38,30 @@ class Search: UIViewController, UICollectionViewDelegate, UICollectionViewDataSo
             height: searchItem.frame.size.height
             )
         )
+        
+        //NOTE: This isn't ideal as it will request the image data every time cellForItemAtIndex is called, which is pretty often.
+        //Ideally this would be moved out and would also have checks around it to stop the image/URL being requested again if it has already been requested but for a first start and a POC it should be fine.
         Critic().getPhotoData(forVenueID: venueToUse.ID) { (dataReturned) in
-            
+            if (dataReturned != nil) {
+                DispatchQueue.main.async {
+                    searchItem.imageView.sd_setImage(with: Photo.createPhotoURL(fromRawPhotoData: dataReturned!))
+                }
+            }
         }
         
+        //Venue Name Label
+        searchItem.detailsLabel = UILabel(frame: CGRect(
+            x: 10,
+            y: searchItem.frame.size.height * 0.7,
+            width: searchItem.frame.size.width,
+            height: searchItem.frame.size.height * 0.3
+            )
+        )
+        searchItem.detailsLabel.text = "\(venueToUse.Name) \nCheckins: \(venueToUse.Checkins)\nCategory: \(venueToUse.CategoryName)"
+        searchItem.detailsLabel.font = UIFont.systemFont(ofSize: 16, weight: UIFont.Weight.light)
+        searchItem.detailsLabel.textColor = .white
+        searchItem.detailsLabel.numberOfLines = 3
+        //-----
         
         return searchItem
     }
