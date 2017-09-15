@@ -9,28 +9,30 @@
 import XCTest
 @testable import SquareSearch
 
-class SquareSearchTests: XCTestCase {
+class VenueTests: XCTestCase {
+    
+    private var mockedVenuesData: Data?
     
     override func setUp() {
-        super.setUp()
-        // Put setup code here. This method is called before the invocation of each test method in the class.
-    }
-    
-    override func tearDown() {
-        // Put teardown code here. This method is called after the invocation of each test method in the class.
-        super.tearDown()
-    }
-    
-    func testExample() {
-        // This is an example of a functional test case.
-        // Use XCTAssert and related functions to verify your tests produce the correct results.
-    }
-    
-    func testPerformanceExample() {
-        // This is an example of a performance test case.
-        self.measure {
-            // Put the code you want to measure the time of here.
+        if let mockedVenuesDataPath = Bundle.main.url(forResource: "ColchesterVenues", withExtension: "json") {
+            do {
+                let rawVenuesData = try Data(contentsOf: mockedVenuesDataPath)
+                
+                mockedVenuesData = rawVenuesData
+            } catch {
+                print("Unable to load the mocked venues json files; Make sure all mocked data files are present and in the correct file locations!")
+                return
+            }
         }
+        super.setUp()
     }
     
+    func testMockedVenuesDataHasLoaded() {
+        XCTAssertNotNil(mockedVenuesData, "Mocked venues data was not loaded correctly")
+    }
+    
+    func testParseVenuesFromRawDataReturnsTheCorrectNumberOfVenues() {
+        let venues = Venues.parse(fromRawData: mockedVenuesData)
+        XCTAssert(venues.count == 5, "Unable to parse the correct number of venues from the mocked data")
+    }
 }
